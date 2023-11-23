@@ -162,13 +162,13 @@
                                     </a>
                                 </div>
                                 <div class="col">
-                                    <a class="dropdown-icon-item" href="#!">
+                                    <a class="dropdown-icon-item" href="https://www.linkedin.com/in/casper-maringe/">
                                         <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
                                         <span>linkedin</span>
                                     </a>
                                 </div>
                                 <div class="col">
-                                    <a class="dropdown-icon-item" href="#!">
+                                    <a class="dropdown-icon-item" href="https://twitter.com/MaringeCasper">
                                         <img src="assets/images/brands/dribbble.png" alt="dribbble">
                                         <span>Twitter</span>
                                     </a>

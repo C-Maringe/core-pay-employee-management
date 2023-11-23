@@ -6,6 +6,7 @@
                     <h4 class="card-title mb-0">Employees Table</h4>
                 </div><!-- end card header -->
 
+
                 <div class="card-body">
                     <div id="customerList">
                         <div class="row g-4 mb-3">
@@ -101,10 +102,6 @@
         </div>
         <!-- end col -->
     </div>
-
-
-
-
 
 
     <div class="modal fade" id="showModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -229,6 +226,59 @@
             });
         });
     </script>
+
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let timerInterval;
+            Swal.fire({
+                title: "Auto close alert!",
+                html: "I will close in <b></b> milliseconds.",
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading();
+                    const timer = Swal.getPopup().querySelector("b");
+                    timerInterval = setInterval(() => {
+                        timer.textContent = `${Swal.getTimerLeft()}`;
+                    }, 100);
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                }
+            }).then((result) => {
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log("I was closed by the timer");
+                }
+            });
+        });
+    </script> -->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Function to show SweetAlert with dynamic message
+        function showSweetAlert(message) {
+            Swal.fire({
+                title: "Action Completed",
+                text: message,
+                icon: "success",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        }
+
+        // Check if there's a message in the URL (from Laravel's with method)
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // If a message is present, show SweetAlert
+        if (message) {
+            showSweetAlert(message);
+        }
+
+        // Your other functions and logic
+    });
+</script>
 
 
 
