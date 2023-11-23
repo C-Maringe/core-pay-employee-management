@@ -9,14 +9,15 @@
 
 ## Running the Project
 
-1.git clone https://github.com/C-Maringe/employee-management.git
-2.cd employee-management
-3.composer update
-4.cp .env.example .env
-5.php artisan key:generate
-6.Create database and add the database credentials in the .env file
-6.RUN  php artisan migrate
-7.RUN  php artisan serve
-8.Access the running application on http://localhost:8000
+#1.git clone https://github.com/C-Maringe/employee-management.git
+#2.cd employee-management
+#3.composer update
+#4.cp .env.example .env
+#5.php artisan key:generate
+#6.Create database and add the database credentials in the .env file
+#6.RUN  php artisan migrate
+#7.RUN  php artisan serve
+#8.Access the running application on http://localhost:8000
+#9.Click on sign-up to register an account and login 
 
 
