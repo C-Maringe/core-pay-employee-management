@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Running the Project
+### Running the Project
 
-#1.git clone https://github.com/C-Maringe/employee-management.git
+**1.git clone https://github.com/C-Maringe/employee-management.git**
 #2.cd employee-management
 #3.composer update
 #4.cp .env.example .env
