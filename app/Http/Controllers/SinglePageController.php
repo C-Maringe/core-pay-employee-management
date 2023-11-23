@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Employee;
 use Illuminate\Validation\Rule;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class SinglePageController extends Controller
 {
@@ -14,7 +15,7 @@ class SinglePageController extends Controller
     {
         $employees = Employee::all();
         return view('pages.spa.index', [
-            'employees' =>$employees
+            'employees' => $employees,
             ]);
     }
 
@@ -40,13 +41,16 @@ class SinglePageController extends Controller
             ]);
 
             $employees = Employee::all();
-    
-            return redirect()->route('spa.main')->with(['message', 'Employee created successfully', 'employees' => $employees]);
+            toast('Employee created successfully','success');
+
+            return redirect()->route('spa.main')->with(['employees' => $employees]);
         } catch (\Exception $e) {
-            if ($e instanceof ValidationException) {
-                return redirect()->back()->withErrors($e->validator->errors())->withInput();
+            if ($e->validator->errors()->all()[0]) {
+                toast($e->validator->errors()->all()[0],'error');
+                return redirect()->back();
             } else {
-                return redirect()->back()->with('error', 'An error occurred while creating the employee.');
+                toast('An error occurred while creating the employee.','error');
+                return redirect()->back();
             }
         }
     }
@@ -70,17 +74,20 @@ class SinglePageController extends Controller
                 'name' => $validatedData['Name'],
                 'email' => $validatedData['Email'],
                 'phone' => $validatedData['Phone'],
-                'designation' => $validatedData['Designation'],
+                'designation' => $validatedData['Designation']
             ]);
 
             $employees = Employee::all();
 
-            return redirect()->route('spa.main')->with(['message', 'Employee updated successfully', 'employees' => $employees]);
+            toast('Employee updated successfully','success');
+            return redirect()->route('spa.main')->with(['employees' => $employees]);
         } catch (\Exception $e) {
-            if ($e instanceof ValidationException) {
-                return redirect()->back()->withErrors($e->validator->errors())->withInput();
-            } else {
-                return redirect()->back()->with('error', 'An error occurred while updating the employee.');
+            if ($e->validator->errors()->all()[0]) {
+                toast($e->validator->errors()->all()[0],'error');
+                return redirect()->back();
+            }else {
+                toast('An error occurred while creating the employee.','error');
+                return redirect()->back();
             }
         }
     }
@@ -93,9 +100,12 @@ class SinglePageController extends Controller
 
             $employees = Employee::all();
 
-            return redirect()->route('spa.main')->with(['message', 'Employee deleted successfully', 'employees' => $employees]);
+            toast('Employee deleted successfully','success');
+
+            return redirect()->route('spa.main')->with(['employees' => $employees]);
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'An error occurred while deleting the employee.');
+            toast('An error occurred while creating the employee.','error');
+            return redirect()->back();
         }
     }
 

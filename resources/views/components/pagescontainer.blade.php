@@ -48,6 +48,7 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
+                  @include('sweetalert::alert')
 
                     <!-- start page title -->
                     <div class="row">
