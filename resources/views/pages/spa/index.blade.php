@@ -1,4 +1,4 @@
-<x-pagescontainer header="Single page" route="Main" path="single-page">
+<x-pagescontainer header="Single page" route="Employee" path="Main">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">

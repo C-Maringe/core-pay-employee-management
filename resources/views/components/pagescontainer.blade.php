@@ -154,6 +154,19 @@
 
     <!-- Sweet alert init js-->
     <script src="assets/js/pages/sweetalerts.init.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var offcanvas = document.getElementById('customizerclose-btn');
+
+        if (offcanvas) {
+            
+            setTimeout(() => {
+                offcanvas.click();                   
+            }, 0);
+        }
+    });
+    </script>
     
 </body>
 

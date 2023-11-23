@@ -10,6 +10,10 @@ use RealRashid\SweetAlert\Facades\Alert;
 class SinglePageController extends Controller
 {
     protected $redirectTo = '/login';
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
     {

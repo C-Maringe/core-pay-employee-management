@@ -30,17 +30,10 @@
                     <div id="two-column-menu">
                     </div>
                     <ul class="navbar-nav" id="navbar-nav">
-                        <li class="menu-title"><span data-key="t-menu">Single page</span></li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Main</span>
-                            </a>
-                        </li> <!-- end Dashboard Menu -->
-
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Multiple pages</span></li>
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
 
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
+                            <a class="nav-link menu-link" href="#" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
                                 <i class="ri-apps-2-line"></i> <span data-key="t-apps">Employee Management</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
