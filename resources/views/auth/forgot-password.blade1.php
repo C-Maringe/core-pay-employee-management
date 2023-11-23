@@ -16,10 +16,12 @@
                         Enter your email and instructions will be sent to you!
                     </div>
                     <div class="p-2">
-                        <form>
+                        <form method="POST" action="{{ route('password.confirm') }}">
+                        @csrf
+                        <input type="hidden" name="token" value="{{ $token }}">
                             <div class="mb-4">
                                 <label class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                <input id="email" type="email" name="email" value="{{ $email ?? old('email') }}" class="form-control" placeholder="Enter Email">
                             </div>
 
                             <div class="text-center mt-4">
@@ -33,7 +35,7 @@
             <!-- end card -->
 
             <div class="mt-4 text-center">
-                <p class="mb-0">Wait, I remember my password... <a href="{{ route('auth.login') }}" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
+                <p class="mb-0">Wait, I remember my password... <a href="{{ route('login') }}" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
             </div>
 
         </div>
