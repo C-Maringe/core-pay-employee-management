@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="/" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="assets/images/corepay/logo2.png" alt="" height="50">
+                            <img src="assets/images/corepay/logo-dark.png" alt="" height="50">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/corepay/logo2.png" alt="" height="50">
+                            <img src="assets/images/corepay/logo-dark.png" alt="" height="50">
                         </span>
                     </a>
 
                     <a href="/" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="assets/images/corepay/logo2.png" alt="" height="50">
+                            <img src="assets/images/corepay/logo-light.png" alt="" height="50">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/corepay/logo2.png" alt="" height="50">
+                            <img src="assets/images/corepay/logo-light.png" alt="" height="50">
                         </span>
                     </a>
                 </div>
@@ -111,7 +111,7 @@
                                         @csrf
                          </form>
                         </div>
-                          
+
                     </div>
                 </div>
             </div>

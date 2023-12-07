@@ -4,9 +4,9 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>{{ $header }} | CorePay</title>
+    <title>{{ $header }} | Employee Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Casper Maringe corepay demo" name="description" />
+    <meta content="Casper Maringe Employee Management demo" name="description" />
     <meta content="Casper Maringe" name="caspermaringe@gmail.com" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    
+
     <div class="auth-page-wrapper pt-5">
         <!-- auth page bg -->
         <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -46,7 +46,7 @@
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
                                 <a href="index.html" class="d-inline-block auth-logo">
-                                    <img src="{{asset('assets/images/corepay/logo2.png')}}" alt="" height="80">
+                                    <img src="{{asset('assets/images/corepay/logo-light.png')}}" alt="" height="80">
                                 </a>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> Corepay. Crafted with <i class="mdi mdi-heart text-danger"></i> by Casper Maringe
+                                <script>document.write(new Date().getFullYear())</script> Crafted with <i class="mdi mdi-heart text-danger"></i> by Casper Maringe
                             </p>
                         </div>
                     </div>

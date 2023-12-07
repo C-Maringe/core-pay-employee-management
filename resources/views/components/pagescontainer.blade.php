@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>{{$header}} | Corepay - Employee management</title>
+    <title>{{$header}} | Employee management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Casper Maringe" name="description" />
     <meta content="Casper Maringe" name="caspermaringe@gmail.com" />
@@ -78,7 +78,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Corepay.
+                            <script>document.write(new Date().getFullYear())</script> © Employee Management.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
@@ -160,14 +160,14 @@
         var offcanvas = document.getElementById('customizerclose-btn');
 
         if (offcanvas) {
-            
+
             setTimeout(() => {
-                offcanvas.click();                   
+                offcanvas.click();
             }, 0);
         }
     });
     </script>
-    
+
 </body>
 
 </html>

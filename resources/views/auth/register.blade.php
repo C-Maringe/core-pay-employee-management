@@ -6,7 +6,7 @@
                 <div class="card-body p-4">
                     <div class="text-center mt-2">
                         <h5 class="text-primary">Create New Account</h5>
-                        <p class="text-muted">Get your free Corepay account now</p>
+                        <p class="text-muted">Get your free Employee management account now</p>
                     </div>
                     <div class="p-2 mt-4">
                         <form class="needs-validation" novalidate method="POST" action="{{ route('register') }}">
@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="mb-4">
-                                <p class="mb-0 fs-12 text-muted fst-italic">By registering you agree to the Corepay <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Terms of Use</a></p>
+                                <p class="mb-0 fs-12 text-muted fst-italic">By registering you agree to the Employee Management <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Terms of Use</a></p>
                             </div>
 
                             <div id="password-contain" class="p-3 bg-light mb-2 rounded">
